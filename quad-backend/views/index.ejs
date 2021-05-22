@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Profile set - 2</title>
+    <link rel="stylesheet" href='/stylesheets/style.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/images/logo.PNG" alt="">
+        </div>
+        <ul class="menu">
+            <li class="item1">   
+                <select name="currency" id="currency">
+                    <option value="inr">INR</option>
+                    <option value="usd">USD</option>
+                    <option value="pound">Pound</option>
+                    <option value="Dinar">Dinar</option>
+                </select>
+            </li>
+            <li class="item2">
+                <select name="base Unit" id="base_unit">
+                    <option value="">BTC</option>
+                </select>
+            </li>
+            <li class="connect_telegram">
+                <a href="connect_telegram">Connect Telegram</a>
+            </li>
+            <li class="item3">
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="table">
+        <table>
+            <tr>
+                <th id="column1">#</th>
+                <th id="column2">name</th>
+                <th id="column3">Last</th>
+                <th id="column4">Buy / Sell Price</th>
+                <th id="column5">Volume</th>
+                <th id="column6">base_unit</th>
+            </tr>
+            <% if(result.length > 0){ %>
+              <% result.forEach((r,i) => { %>
+            <tr class= "rows">
+                <td><%=i+1%></td>
+                <td><%=r.name%></td>
+                <td><%=r.last%></td>
+                <td><%=r.buy%> / <%=r.sell%></td>
+                <td><%=r.volume%></td>
+                <td><%=r.base_unit%></td>
+            </tr>
+            <%})%>
+            <%}%>
+        </table>
+    </div>
+</body>
+</html>

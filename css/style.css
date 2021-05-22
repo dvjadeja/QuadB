@@ -1,0 +1,162 @@
+html {
+  background-color: #0d1a26;
+}
+#navbar {
+  background-color: #0d1a26;
+  font-family: "Baloo Bhai 2", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  height: 150px;
+  left: 30px;
+}
+
+#navbar ul li {
+  /* color: white; */
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+.menu {
+  justify-content: center;
+}
+#navbar ul {
+  display: flex;
+  justify-content: center;
+}
+
+#currency {
+  color: white;
+  background-color: #264d73;
+  border-color: #264d73;
+  display: flex;
+  position: relative;
+  border-radius: 30px;
+  margin-left: 30px;
+  margin: 8%;
+  right: 300px;
+  padding: 5px;
+}
+
+#base_unit {
+  color: white;
+  background-color: #264d73;
+  border-color: #264d73;
+  display: flex;
+  position: relative;
+  border-radius: 30px;
+  margin-left: 30px;
+  margin: 8%;
+  padding: 5px;
+  right: 280px;
+}
+
+#navbar ul li a {
+  color: white;
+  background-color: #2196f3;
+  display: block;
+  text-decoration: none;
+  padding: 3px 22px;
+  border-radius: 20px;
+  /* background-color: white; */
+}
+
+.table {
+  color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+td {
+  background-color: #264d73;
+  border-collapse: collapse;
+}
+
+#column1 {
+  padding: 30px 10px 10px 10px;
+}
+
+#column2 {
+  padding: 30px 90px 10px 10px;
+}
+
+#column3 {
+  padding: 30px 70px 10px 10px;
+}
+
+#column4 {
+  padding: 30px 90px 10px 10px;
+}
+
+#column5 {
+  padding: 30px 90px 10px 10px;
+}
+
+#column6 {
+  padding: 30px 90px 10px 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 110px;
+  right: -110px;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
